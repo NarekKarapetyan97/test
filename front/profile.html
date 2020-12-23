@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+  <div class = "text-right" >
+    <button  id="logout"> Log Out</button>
+  </div>
+<h2>Profile</h2>
+<p>Profile Name is  <mark> <span id = "showname"></span> </mark> </p>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post and Chat</title>
+  <script defer src="http://localhost:5001/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+   
+  
+    <div id="message-container" class="col-md-6 col-xl-4 px-0" >
+     <div id="feedback"></div>
+     
+    </div>
+  
+
+  
+  <form id="send-container">
+    <input type="text" id="message-input">
+    <button type="submit" id="send-button" class="btn btn-secondary">Send</button>
+  </form>
+
+  <script src="profile.js"></script>
+</body>
+</html>
